@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="well-sm">
+    <h2>Uploading</h2>
+    <p></p>
+<div class="well-sm">
+    <div class="form-horizontal">
+        @using (Html.BeginForm("Index", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+        // an encoding type that allows files to be sent through a POST.
+        // Quite simply, without this encoding the files cannot be sent through POST.
+        {
+            <div><input type="file" name="files" /></div>
+            <br />
+            <div><input type="submit" value="Upload" /></div>
+        }
+    </div>
+    <br />
+</div>
+

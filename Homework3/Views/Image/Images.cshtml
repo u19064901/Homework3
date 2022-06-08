@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Images";
+}
+
+<h2>Images</h2>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<div class="gallery">
+    <a href="fullsize.png"><img src="thumbnail.png"></a>
+    <a href="fullsize.png"><img src="thumbnail.png"></a>
+    <a href="fullsize.png"><img src="thumbnail.png"></a>
+    ...
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".gallery a").fancybox();
+    });
+</script>
